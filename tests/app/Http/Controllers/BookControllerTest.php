@@ -22,7 +22,7 @@ class BooksControllerTest extends TestCase
          $response->seeJson([
             'title' => 'War of the Worlds',
             'title' => 'A Wrinkle in Time'
-            ], 'hello');
+            ]);
             
     }
 }

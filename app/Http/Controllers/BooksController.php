@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
+
 /**
  * Class BooksController
  * @package App\Http\Controllers
@@ -12,10 +14,8 @@ class BooksController {
 	 * @return array
 	 */
 	public function index(){
-		return [
-			["title" => 'War of the Worlds'],
-			['title' => 'A Wrinke in Time']
-		];
+		
+		return Book::all();
 	}
 
 
